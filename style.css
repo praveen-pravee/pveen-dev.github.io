@@ -8,6 +8,7 @@ html {
     
     scroll-behavior: smooth;
     color: hsla(0, 0, 0, 0.8);
+
 }
 body {
     font-family: 'Maven Pro', sans-serif;
@@ -57,8 +58,8 @@ nav {
     justify-content: center;
     align-items: flex-start;
     margin-left: 100px;
-    height: 100vh;
     margin-top: 100px;
+    height: 30vh;
 }
 div, h1, p {
     margin-right: 30px;
@@ -77,19 +78,34 @@ h1 {
     font-weight: bold;
     z-index: 1;
 }
+.share {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 100px;
+    margin-top: 400px;
+}
+.info {
+    margin-left: 10%;
+}
+.info p {
+    width: 300px;
+    line-height: 25px;
+}
 .connect {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 100px;  
 }
 .connect h3 {
     font-size: 30px;
 }
 .contact li {
     display: inline-flex;    
-    margin: 50px 50px 20px 0px;
+    margin: 50px 20px 20px 0px;
     margin-left: 50px;
 }
 .contact li a {
@@ -100,4 +116,8 @@ footer {
     margin-bottom: 11px;
     text-align: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    
 }
