@@ -10,24 +10,32 @@
 			padding: 0;
 		}
 		body {
-			height: 170vh;
-			border-left: 70px solid red;
+			height: 230vh;
+			background: white;
 		}
 		img {
 			position: relative;
-			top: 50px;
-			left: 18%;
-			width: 65%;
+			top: 100px;
+			display: block;
+			width: 70%;
 			height: auto;
 			border-radius: 10px;
-			box-shadow: 1px 1px 10px 3px black;
+			border: 3px solid black;
+			box-shadow: 1px 1px 100px 10px grey;
 		}
 		img:hover {
-			box-shadow: 1px 1px 10px 5px grey;
+			border: 3px solid grey;
+		}
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	</style>
 </head>
 <body>
+<div>
 	<img src="./img/cv.png" alt="Curriculum Vitae.png">
+</div>
 </body>
 </html>
