@@ -1,0 +1,190 @@
+/* * {
+	border: 2px solid white;
+} */
+body {
+	background-color: #0a0d0f;	
+	color: white;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 200vh;
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
+header {
+	width: 240px;
+	font-size: 50px;
+	position: relative;
+	top: 70px;
+	left: 70px;
+	font-family: "Alata", sans-serif;
+	font-weight: bold;
+	letter-spacing: 5px;
+	cursor: pointer;
+}
+aside {
+	font-size: 25px;
+	margin: 75px 70px;
+	color: black;
+	max-width: 233px;
+	background-color: ghostwhite;
+}
+p {
+	width: 150px;
+	font-size: 19px;
+	position: relative;
+	left: 71px;
+	font-family: "Alata", sans-serif;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+.head-one:hover {
+	background-color: ghostwhite;
+	color: black;
+}
+.para-one {
+	width: 34%;
+}
+pre {
+	width: 45%;
+	font-size: 13px;
+	position: relative;
+	left: 70px;
+}
+code {
+	margin-left: 70px;
+	color: black;
+	padding: 3px;
+	background-color: ghostwhite;
+	font-weight: bold;
+}
+.description {
+	width: 100px;
+	top: 10px;
+}
+.content {
+	top: 15px;
+	right: 35px;
+} 
+.bright {
+	position: relative;
+	top: 21px;
+	transition: transform .5s ease-in-out;
+}
+.bright:hover {
+	transform: rotate(360deg);
+}
+.rright {
+	position: relative;
+	display: flex;
+	left: 5.5%;
+	top: 20px;
+	transition: transform .5s ease-in-out;
+}
+.rright:hover {
+	transform: rotate(360deg);
+}
+section {
+	display: flex;
+	position: relative;
+	bottom: 10px;
+	left: 50px;
+}
+li {
+	list-style-type: none;
+	padding: 10px;
+}
+h6 {
+	position: relative;
+	left: 8%;
+	bottom: 45px;
+	font-size: 16px;
+	font-family: "Alata", sans-serif;
+}
+img {
+	border-radius: 1px 1px 1px 10px red;
+}
+#time {
+	position: relative;
+	float: right;
+	top: 80px;
+	right: 25px;
+	border: 3px solid white;
+	padding: 9px;
+	font-size: 20px;
+	font-family: "Alata", sans-serif;
+	background-color: black;
+}
+#time:hover{
+	background-color: whitesmoke;
+	border: 5px solid black;
+	color: black;
+}
+.glitch::before, .glitch::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: 'PRAVEEN';
+	display: block;
+}
+.glitch:hover::before {
+	animation: glitch 0.3s linear infinite reverse;
+	color: blue;
+	z-index: -2;
+}
+.glitch:hover::after {
+	animation: glitch 0.3s linear infinite reverse;
+	color: red;
+	z-index: -1;
+}
+@keyframes glitch {
+	0%{
+		top:0;
+		left: 0;
+	}
+	20%{
+		top:-3px;
+		left: -5px;
+	}
+	40%{
+		top: 3px; 
+		left: 3px;
+	}
+	60%{
+		top: -5px;
+		left: 3px;
+	}
+	80%{
+		top: 3px;
+		left: -5px;
+	}
+	100%{
+		top: 0;
+		left: 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {  
+	
+	body {
+		width: 200%;
+		margin-top: 300px;
+		margin-left: 30px;
+		
+	}
+	#time {
+			display: none;
+		}      
+	#particles-js {
+		width: 200%;
+		max-width: 200%;
+		height: 100vh;
+	}
+	aside {
+		font-size: 21px;
+	}
+   }  
